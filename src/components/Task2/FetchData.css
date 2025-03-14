@@ -1,0 +1,84 @@
+.fetch-data-container {
+  padding: 20px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.fetch-data-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fetch-data-page-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Ensuring exactly 5 cards per row on large screens */
+.fetch-data-card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .fetch-data-card-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .fetch-data-card-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .fetch-data-card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+
+@media (max-width: 400px) {
+  .fetch-data-card-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 per row */
+  }
+}
+
+/* Card styling */
+.fetch-data-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fetch-data-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fetch-data-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1890ff;
+  margin-bottom: 10px;
+}
+
+.fetch-data-card-body {
+  font-size: 14px;
+  color: #666;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}

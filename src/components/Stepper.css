@@ -1,0 +1,46 @@
+.stepper-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows buttons to wrap if screen is small */
+}
+
+.stepper-header-buttons {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto; /* Makes buttons scrollable on small screens */
+  padding-bottom: 5px;
+}
+
+/* Hide scrollbar in modern browsers */
+.stepper-header-buttons::-webkit-scrollbar {
+  display: none;
+}
+
+.stepper-content {
+  margin-top: 70px; /* Prevents content from being hidden behind header */
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stepper-header {
+      justify-content: flex-start; /* Align buttons to the left */
+      padding: 10px 15px;
+  }
+
+  .stepper-header-buttons {
+      flex-wrap: nowrap; /* Keep buttons in a single row */
+      white-space: nowrap;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      display: flex;
+  }
+}

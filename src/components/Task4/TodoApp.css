@@ -1,0 +1,141 @@
+/* src/components/Task4/TodoApp.css */
+.todo-app-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh; /* Ensure the container covers the full height */
+    background-color: #f0f2f5; /* Light background color */
+    padding: 20px; /* Add padding to prevent overflow */
+  }
+  
+  .todo-app-card {
+    width: 400px; /* Default width */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: width 0.3s ease; /* Smooth transition for width change */
+  }
+  
+  .todo-app-card.wide {
+    width: 800px; /* Wider width for more tasks */
+  }
+  
+  .todo-app-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-app-input-container {
+    display: flex;
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 20px;
+  }
+  
+  .todo-app-input {
+    flex: 1;
+  }
+  
+  .todo-app-add-button {
+    background-color: #1890ff; /* Primary button color */
+    border-color: #1890ff;
+  }
+  
+  .todo-app-add-button:hover {
+    background-color: #40a9ff; /* Hover color */
+  }
+  
+  .todo-app-add-button:active {
+    background-color: #096dd9; /* Active color */
+  }
+  
+  .todo-app-list-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow tasks to wrap into columns */
+    gap: 20px; /* Space between columns */
+  }
+  
+  .todo-app-list {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .todo-app-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0; /* Add a border between items */
+  }
+  
+  .todo-app-task {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .todo-app-actions {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .todo-app-edit-button {
+    background-color: #52c41a; /* Edit button color */
+    border-color: #52c41a;
+    color: #fff;
+  }
+  
+  .todo-app-edit-button:hover {
+    background-color: #73d13d; /* Hover color */
+  }
+  
+  .todo-app-edit-button:active {
+    background-color: #389e0d; /* Active color */
+  }
+  
+  .todo-app-delete-button {
+    background-color: #ff4d4f; /* Delete button color */
+    border-color: #ff4d4f;
+    color: #fff;
+  }
+  
+  .todo-app-delete-button:hover {
+    background-color: #ff7875; /* Hover color */
+  }
+  
+  .todo-app-delete-button:active {
+    background-color: #d9363e; /* Active color */
+  }
+  
+  .todo-app-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .todo-app-final-button {
+    background-color: #1890ff; /* Primary button color */
+    border-color: #1890ff;
+  }
+  
+  .todo-app-final-button:hover {
+    background-color: #40a9ff; /* Hover color */
+  }
+  
+  .todo-app-final-button:active {
+    background-color: #096dd9; /* Active color */
+  }
+  
+  .todo-app-reset-button {
+    background-color: #ff4d4f; /* Reset button color */
+    border-color: #ff4d4f;
+    color: #fff;
+  }
+  
+  .todo-app-reset-button:hover {
+    background-color: #ff7875; /* Hover color */
+  }
+  
+  .todo-app-reset-button:active {
+    background-color: #d9363e; /* Active color */
+  }

@@ -1,0 +1,44 @@
+/* src/components/Task1/Task1.css */
+.task1-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task1-content {
+    margin-bottom: 20px;
+  }
+  
+  .task1-navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .task1-navigation-button {
+    background-color: #1890ff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 40px;
+    padding: 0 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task1-navigation-button:hover {
+    background-color: #40a9ff;
+  }
+  
+  .task1-navigation-button:active {
+    background-color: #096dd9;
+  }
+  
+  .task1-navigation-button:disabled {
+    background-color: #f5f5f5;
+    color: #d9d9d9;
+    cursor: not-allowed;
+  }

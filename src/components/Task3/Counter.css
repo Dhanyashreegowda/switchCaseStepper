@@ -1,0 +1,81 @@
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Center the card vertically */
+  background-color: #f0f2f5; /* Light background color */
+}
+
+.done-watching-button {
+  margin-bottom: 20px; /* Adds spacing between button and card */
+  background-color: #52c41a; /* Green color */
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.done-watching-button:hover {
+  background-color: #389e0d; /* Darker green on hover */
+}
+
+.counter-card {
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.counter-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.counter-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between buttons */
+}
+
+.counter-button {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.counter-button.ant-btn-primary {
+  background-color: #1890ff; /* Primary button color */
+  border-color: #1890ff;
+}
+
+.counter-button.ant-btn-primary:hover {
+  background-color: #40a9ff; /* Hover color */
+}
+
+.counter-button.ant-btn-primary:active {
+  background-color: #096dd9; /* Active color */
+}
+
+.reset-button {
+  background-color: #ff4d4f; /* Reset button color */
+  border-color: #ff4d4f;
+  color: #fff;
+}
+
+.reset-button:hover {
+  background-color: #ff7875; /* Hover color */
+}
+
+.reset-button:active {
+  background-color: #d9363e; /* Active color */
+}

@@ -1,0 +1,14 @@
+/* src/components/Task1/UserForm.css */
+.user-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .out_box {
+    margin-bottom: 20px;
+  }
+  
+  .in_box {
+    margin-bottom: 20px;
+  }
